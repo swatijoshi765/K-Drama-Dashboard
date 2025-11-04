@@ -1,0 +1,91 @@
+/* ---------------- BACKGROUND FOR ENTIRE PAGE ---------------- */
+body {
+    background: linear-gradient(to bottom right, #ffd6e6, #ffe6f0);
+    color: #3d003d;
+}
+
+/* ---------------- SIDEBAR ---------------- */
+section[data-testid="stSidebar"] {
+    background-color: #ffcce6;  /* Sidebar pink */
+    color: #880e4f;
+}
+
+/* ---------------- MAIN CONTAINER ---------------- */
+div.block-container {
+    padding: 2rem 3rem;
+    background-color: #ffe6f2;  /* Light pink main area */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.3);
+    color: #4a004a;  /* Darker text for contrast */
+}
+
+/* ---------------- HEADINGS ---------------- */
+h1, h2, h3, h4 {
+    color: #b30059;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+}
+
+/* ---------------- LABELS & SELECTBOXES ---------------- */
+label, .stSelectbox label, .stMultiSelect label {
+    color: #4a004a !important;
+    font-weight: 500;
+}
+
+/* ---------------- SCROLLBAR ---------------- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #f7b6d2;
+    border-radius: 10px;
+}
+
+/* ---------------- TABLE ---------------- */
+table {
+    background-color: #fff0f5;
+    border-radius: 10px;
+}
+
+/* ---------------- IMAGE SHADOW ---------------- */
+img {
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(255, 182, 193, 0.4);
+}
+
+/* ---------------- HIDE STREAMLIT FOOTER ---------------- */
+#MainMenu, footer {
+    visibility: hidden;
+}
+/* ---------------- METRIC (BIG NUMBER) STYLING ---------------- */
+[data-testid="stMetricValue"] {
+    color: #b30059 !important;  /* Deep pink for visibility */
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Optional: make metric labels darker too */
+[data-testid="stMetricLabel"] {
+    color: #4a004a !important;
+    font-weight: 500;
+}
+/* ---------------- CUSTOM ALERT BOX ---------------- */
+.cast-image-warning {
+    background-color: #ffe0eb;
+    color: #880e4f;
+    font-weight: 500;
+    border-left: 5px solid #ff99cc;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cast-image-warning span {
+    font-size: 1.05rem;
+}
+
+
+
